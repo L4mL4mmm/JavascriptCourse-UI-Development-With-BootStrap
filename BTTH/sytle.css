@@ -1,0 +1,15 @@
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.ratio-3x4 {
+    --bs-aspect-ratio: calc(4 / 3 * 100%);
+}
+
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Practice Part 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Bài 1: Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">BookStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Danh mục</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bài 2: Banner -->
+    <header class="container my-5 text-center">
+        <h1 class="display-1 text-danger fw-bold mb-4">THÁNG ĐỌC SÁCH</h1>
+        <div class="ratio ratio-21x9">
+            <img src="https://i.pinimg.com/originals/7c/0b/a1/7c0ba1a23717931706872af6ce0bdcc0.jpg" 
+                 class="img-fluid rounded shadow object-fit-cover" alt="Banner">
+        </div>
+    </header>
+
+    <!-- Bài 3: Grid System & Cards -->
+    <main class="container my-5">
+        <h2 class="mb-4">Sách nổi bật</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="ratio ratio-3x4">
+                        <img src="https://i.pinimg.com/originals/7c/0b/a1/7c0ba1a23717931706872af6ce0bdcc0.jpg" 
+                             class="card-img-top object-fit-cover" alt="Book">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lập trình C++</h5>
+                        <p class="card-text text-muted">Kiến thức nền tảng CNTT.</p>
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="ratio ratio-3x4">
+                        <img src="https://i.pinimg.com/originals/7c/0b/a1/7c0ba1a23717931706872af6ce0bdcc0.jpg" 
+                             class="card-img-top object-fit-cover" alt="Book">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cấu trúc dữ liệu</h5>
+                        <p class="card-text text-muted">Tối ưu hóa thuật toán.</p>
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="ratio ratio-3x4">
+                        <img src="https://i.pinimg.com/originals/7c/0b/a1/7c0ba1a23717931706872af6ce0bdcc0.jpg" 
+                             class="card-img-top object-fit-cover" alt="Book">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">AI & Robotics</h5>
+                        <p class="card-text text-muted">Khám phá tương lai AI.</p>
+                        <a href="#" class="btn btn-primary w-100">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bài 4: Table -->
+        <section class="mt-5">
+            <h2 class="mb-4">Danh mục quản lý</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover border">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên Sách</th>
+                            <th>Tác giả</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Lập trình C++</td>
+                            <td>Rikkei Academy</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Cấu trúc dữ liệu</td>
+                            <td>HEDSPI Team</td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>AI & Robotics</td>
+                            <td>RikkeiSoft</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

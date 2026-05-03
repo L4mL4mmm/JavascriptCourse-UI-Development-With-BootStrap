@@ -1,0 +1,39 @@
+:root {
+    --rikkei-red: #8B0000;
+    --rikkei-black: #1A1A1A;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.btn-brand-primary {
+    background-color: var(--rikkei-red) !important;
+    border-color: var(--rikkei-red) !important;
+    color: white !important;
+}
+
+.btn-brand-primary:hover {
+    filter: brightness(90%);
+}
+
+.btn-brand-secondary {
+    background-color: var(--rikkei-black) !important;
+    border-color: var(--rikkei-black) !important;
+    color: white !important;
+}
+.ratio-3x4 {
+    --bs-aspect-ratio: calc(4 / 3 * 90%);
+}
+
+.object-fit-cover {
+    object-fit: cover; 
+}
+.btn-brand-secondary:hover {
+    filter: brightness(120%);
+}
+
+.rounded-pill {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
